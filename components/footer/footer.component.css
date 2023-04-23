@@ -1,0 +1,25 @@
+ .footer {
+	display: flex;
+	justify-content: space-between;
+	color: #777;
+	align-items: baseline;
+} 
+
+.example-button-row a{
+    margin: 0.25em;
+  }
+
+.counter,
+.clear-completed {
+	font-size: 1em;
+	color: #777;
+}
+
+.counter {
+	margin-left: 1em;
+    padding: 1em;
+}
+
+.clear-completed {
+    margin-right: 1em;
+}
