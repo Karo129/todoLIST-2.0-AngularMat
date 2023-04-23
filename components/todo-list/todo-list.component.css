@@ -19,7 +19,7 @@
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
     margin-top: 12em;
 }
-/* header */
+
 .header h1 {
 	display: flex;
 	text-align: center;
@@ -30,31 +30,21 @@
     margin-top: -1.2em;
 }
 
-.header i {
-	font-size: 1.6em;
-	color: #e6e6e6;
-	padding: 0.8em;
-}
-
-:focus {
-	outline: 0;
-}
-
-.new-todo {
-	font-size: 2em;
-	font-style: italic;
-	font-weight: 300;
-	color: inherit;
-	padding: 0.7em;
-	border: none;
-	box-shadow: inset 0 -0.2em 0.1em rgba(0, 0, 0, 0.02);
-}
-
-
 .todo-list {
 	list-style-type: none;
 	font-size: 2em;
 	padding: 0.7em;
 }
 
-
+.example-form {
+    min-width: 20em;
+    max-width: 38em;
+    width: 100%;
+    font-size: 1.8em;
+    padding: 0.5em;
+  }
+  
+  .example-full-width {
+    width: 90%;
+    padding: 1em;
+  }
