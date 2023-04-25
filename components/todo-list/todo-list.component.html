@@ -1,16 +1,20 @@
 <main class="todo">
-    <div class="section-main">
-        <header class="header">
-            <h1>todos</h1>
-            <form class="example-form">
-                <mat-form-field class="example-full-width">
-                  <input matInput  placeholder="What needs to be done?">
-                </mat-form-field>
-              </form>
-        </header>
-            <ul class="todo-list">
-              <app-todo-item></app-todo-item>
-            </ul>
-      <app-footer></app-footer>
-    </div>
+  <div class="section-main">
+    <header class="header">
+      <h1>todos</h1>
+      <form class="example-form">
+    
+        <mat-form-field class="example-full-width">
+          <i class="fa-solid fa-chevron-down toggleButton" (click)="toggleAll()"></i>
+          <input matInput placeholder="What needs to be done?" [(ngModel)]="newTodo"
+          (keyup.enter)="addTodo()">  
+        </mat-form-field>
+      </form>
+    </header>
+    <ul class="todo-list">
+      <app-todo-item></app-todo-item>
+    </ul>
+    <app-footer></app-footer>
+  </div>
 </main>
+

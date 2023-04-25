@@ -10,11 +10,16 @@ import { TodoListService } from 'src/app/services/todo-list.service';
 })
 export class TodoItemComponent implements OnInit {
   todos: newTodo[] = [];
-  
+
   constructor(private todolistservice: TodoListService) { }
 
   ngOnInit(): void {
     this.todos = this.todolistservice.getTasks();
   }
+
+  deleteTodo(index: number) {
+    this.todolistservice.removeTodo(index);
+  }
+
 
 }
