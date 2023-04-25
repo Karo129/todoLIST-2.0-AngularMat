@@ -1,1 +1,7 @@
-<p>todo-item works!</p>
+<li *ngFor="let todo of todos; let i= index">
+        <section class="example-section">
+                <mat-checkbox class="example-margin" [(ngModel)]="todo.done"> zadanie nr 2</mat-checkbox>
+                <button mat-button color="warn">X</button>
+              </section>
+</li>
+
